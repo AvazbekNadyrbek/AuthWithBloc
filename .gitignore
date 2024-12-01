@@ -1,0 +1,2 @@
+# Ignore log files
+.dart_tool/chrome-device/Default/shared_proto_db/*.log
