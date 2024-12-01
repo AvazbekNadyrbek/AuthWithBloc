@@ -14,6 +14,12 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     print('Change - $change');
   }
 
+  @override
+  void onTransition(Transition<AuthEvent, AuthState> transition) {
+    super.onTransition(transition);
+    print('Transition - $transition');
+  }
+
   Future<void> _onAuthLoginRequested(
     AuthLoginEvent event,
     Emitter<AuthState> emit,
